@@ -19,7 +19,7 @@ See the module docstring in `shakermaker.py` for the full disclaimer text.
 - Linux (or similar Unix with raw 802.11 support as used here)
 - [Scapy](https://scapy.net/)
 - Root privileges for raw send/receive
-- A wireless interface already in **monitor mode** (this tool does not configure monitor mode for you)
+- A wireless interface already in **monitor mode** and bound to the **same channel** as the **target router** (this tool does not configure monitor mode for you)
 
 ## Install
 
@@ -30,7 +30,7 @@ pip install -r requirements.txt
 ## Usage (illustrative only)
 
 ```bash
-sudo python3 shakermaker.py --bssid AA:BB:CC:DD:EE:FF --target 11:22:33:44:55:66 --iface wlan0mon
+sudo python3 shakermaker.py --bssid AA:BB:CC:DD:EE:FF --target 11:22:33:44:55:66 --iface wlan0mon --burst 1
 ```
 
 Replace MACs and interface names with values appropriate to **your** lab and authorization.
