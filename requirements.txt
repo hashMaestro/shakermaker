@@ -1,0 +1,2 @@
+# Experimental PoC — pin versions in your own fork if you need reproducibility.
+scapy>=2.5.0

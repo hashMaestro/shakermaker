@@ -1,0 +1,16 @@
+# Bytecode
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+
+# Captures produced by this PoC
+handshake_*.pcap
+
+# Editor / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
