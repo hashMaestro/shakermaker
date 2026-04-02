@@ -1,8 +1,10 @@
 # Shakermaker
 
-**Status:** unfinished experimental proof of concept — not production code.
+### Automatated WPA2-PSK deauthentication and 4-Way Handshake capturing using scapy.
 
-Shakermaker is informal research software for studying 802.11 frame handling in controlled environments. It was written as exploratory work and has **not** been through systematic testing, code review, or hardening. **Do not** use it for operational security work, client engagements, or any purpose outside explicit, authorized research.
+Shakermaker uses the Scapy packet manipulation library to inject targeted 802.11 deauthentication frames, temporarily forcing a client to disconnect from its Access Point. Concurrently, the tool listens asynchronously on the interface to capture the subsequent WPA2 4-way handshake during the device's automatic reconnection for later offline analysis.
+
+**Status:** unfinished experimental proof of concept — not production code.
 
 ## Disclaimer
 
