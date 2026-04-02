@@ -47,7 +47,7 @@ from typing import List, Optional, Set, Tuple
 
 from scapy.all import Dot11, Dot11Deauth, RadioTap, sniff, sendp, wrpcap
 from scapy.packet import Packet
-from scapy.utils import EUI
+from netaddr import EUI
 
 # -----------------------------------------------------------------------------
 # Constants
